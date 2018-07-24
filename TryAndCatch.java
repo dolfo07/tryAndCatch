@@ -9,6 +9,9 @@ import java.util.Scanner;
 
 public class TryAndCatch {
     public static void main(String[] args) {
+        tryAndCatch();
+    }
+    private static void tryAndCatch() {
         double salary = 40000.0, totalSales, additionalCompensation, finalCompensation,
                 fixedPercentage = .15;
         try {
@@ -22,7 +25,6 @@ public class TryAndCatch {
                     , additionalCompensation);
             finalCompensation = salary + additionalCompensation;
             System.out.println("\n" + "The employee's final compensation is $" + finalCompensation + "\n");
-
         } catch (Exception e) {
             System.out.println("Input must be a number");
         }
